@@ -126,7 +126,7 @@
     var svg;
 
     function name(d) {
-      return d.data.n || d.data.name;
+      return d.data ? (d.data.n || d.data.name) : (d.n || d.name);
     }
 
     function children(d) {
